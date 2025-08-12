@@ -1,0 +1,28 @@
+<h1>Create and track your tasks</h1>
+
+<div class="container">
+
+    <div>
+        <input type="text" (input)="handleInput($event)" placeholder="Enter new task..." [value]="newTask()" /> &nbsp;
+        <button (click)="addTask()">Add</button> &nbsp;
+        <button (click)="clearAllTasks()">Clear all tasks</button>
+        <br />
+    </div>
+
+    <div>
+        <h3>My tasks: </h3>
+        <ul>
+            @for (task of tasks(); track task.id) {
+            <li>
+                <span>{{ task.description }}</span>
+                <button [disabled]="task.status" (click)="changeStatus(task)">{{task.status ? "Completed" : "Complete"}}</button>
+            </li>
+            }
+        </ul>
+    </div>
+
+    <div>
+        <p>Tasks: {{ tasks().length }} | Completed: {{ completedTasks() }} | Pending: {{ pendingTasks() }}</p>
+    </div>
+
+</div>
