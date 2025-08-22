@@ -1,0 +1,15 @@
+* {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 300px;
+  gap: 10px; 
+  background-color: #95d6f6;
+  padding: 20px;
+  border-radius: 8px;
+}

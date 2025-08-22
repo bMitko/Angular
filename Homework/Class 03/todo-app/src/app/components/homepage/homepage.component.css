@@ -1,0 +1,35 @@
+*{
+    display: flex;
+    justify-content: center;
+}
+
+.homepageDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    height: 250px;
+    width: 500px;
+    padding: 0%;
+    justify-content: space-between;
+}
+
+li {
+    cursor: pointer;
+    background-color: lightblue;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    font-size: xx-large;
+}
+
+li:hover {
+    background-color: #4a7cf0;
+
+}

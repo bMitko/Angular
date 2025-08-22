@@ -1,0 +1,25 @@
+.todo-item {
+    width: 350px;
+    height: 150px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #e5e9eb;
+  border-radius: 10px;
+}
+
+.completed {
+  border: 3px solid #1e973b;
+}
+
+.in-progress {
+  border:3px solid #f27209; 
+}
+
+.pending {
+  border: 3px solid #16b1c9; 
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+

@@ -1,0 +1,17 @@
+<div class="todo-item" [ngClass]="getStatusClass(todo().status)">
+    <p [ngClass]="{ 'strikethrough': todo().status === 'Completed' }">{{todo().title}}</p>
+    <p>{{todo().description}}</p>
+    <p>{{todo().status}}</p>
+    <button (click)="toggleStatusOptions()">Change status</button>
+    @if(showStatusOptions()) {
+    @for (option of changeStatusList(); track option.key) {
+    <label>
+        <input type="radio" name="status-{{ todo().id }}" [value]="option.value"
+            (change)="handleUpdate(option.value)" />
+        {{ option.value }}
+    </label>
+    }
+    }
+    <br />
+    <button (click)="handleDelete()">Delete 'todo'</button>
+</div>

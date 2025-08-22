@@ -1,0 +1,11 @@
+<h1>CREATE TODO WORKS!</h1>
+<div class="form">
+    <label>Title: </label>
+    <input type="text" placeholder="Todo title" [value]="title" (input)="titleInput($event)" />
+    <br />
+    <label>Description: </label>
+    <textarea cols="30" rows="10" placeholder="Todo description" [value]="description"
+        (input)="descriptionInput($event)"></textarea>
+    <br />
+    <button (click)="handleSubmit()">Create Ticket</button>
+</div>
