@@ -1,4 +1,4 @@
-import { TodoStatus } from "../types/todo-status";
+import { TodoStatus } from "../types/todo-status.enum";
 
 export const TodoData = [
     {

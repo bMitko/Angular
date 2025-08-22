@@ -1,4 +1,4 @@
-import { TodoStatus } from "./todo-status";
+import { TodoStatus } from "./todo-status.enum";
 
 export interface Todo {
     id: string;

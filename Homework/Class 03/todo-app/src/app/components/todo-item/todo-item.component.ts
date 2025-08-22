@@ -1,6 +1,6 @@
 import { Component, input, signal } from "@angular/core";
 import { Todo } from "../types/todo.type";
-import { TodoStatus } from "../types/todo-status";
+import { TodoStatus } from "../types/todo-status.enum";
 import { TodoService } from "../../services/todo.service";
 import { CommonModule } from "@angular/common";
 

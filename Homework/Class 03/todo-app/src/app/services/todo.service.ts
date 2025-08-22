@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
 import { TodoData } from "../components/data/todos";
-import { TodoStatus } from "../components/types/todo-status";
+import { TodoStatus } from "../components/types/todo-status.enum";
 import { Todo } from "../components/types/todo.type";
 
 @Injectable({
